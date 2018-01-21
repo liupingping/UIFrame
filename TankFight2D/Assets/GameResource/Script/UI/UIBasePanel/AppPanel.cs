@@ -8,7 +8,7 @@ public class AppPanel : MonoBehaviour {
 
 	private string appName;
 
-	private Object data;
+	private object data;
 
 	private string openTable;
 
@@ -30,7 +30,7 @@ public class AppPanel : MonoBehaviour {
 
 	}
 
-	public void init(Object data, string openTable)
+	public void init(object data, string openTable)
 	{
 		this.data = data;
 		this.openTable = openTable;

@@ -68,7 +68,6 @@
      <Compile Include="Assets\GameResource\Script\UI\UIManager\UIManager.cs" />
      <Compile Include="Assets\GameResource\Script\UI\UIResource\AssetLoadAgent.cs" />
      <Compile Include="Assets\GameResource\Script\UI\UIResource\ResourcesPath.cs" />
-     <Compile Include="Assets\GameResource\Script\UI\UIUtilities\MonoSingleton.cs" />
      <Compile Include="Assets\GameResource\Script\Util\EnumNumUtil.cs" />
      <Compile Include="Assets\GameResource\Script\Util\GameDefine.cs" />
  <Reference Include="UnityEngine.UI">
@@ -155,10 +154,6 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>/Users/liupingping/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{7DA0C906-ABBE-8A3F-17BB-C7500D18F265}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

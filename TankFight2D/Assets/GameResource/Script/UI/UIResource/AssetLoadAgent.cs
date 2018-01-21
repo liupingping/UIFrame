@@ -87,17 +87,5 @@ public class AssetLoadAgent  {
 			}
 		}
 
-		public virtual UIAtlas Atlas
-		{
-			get 
-			{
-				if(AssetObject == null)
-				{
-					return null;
-				}
-				
-				UIAtlas go = ((GameObject)AssetObject).GetComponent<UIAtlas>();
-				return go;
-			}
-		}
+		
 }

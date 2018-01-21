@@ -5,7 +5,7 @@ using UnityEngine;
 public class AppManager {
 
 
-	private Dictionary<string,AppPanel> moduleDic = new Dictionary<string,AppPanel >();
+	private static Dictionary<string,AppPanel> moduleDic = new Dictionary<string,AppPanel >();
 
 	public static void showApp(string  appName,object obj = null,string openTable = "")
 	{
@@ -36,7 +36,7 @@ public class AppManager {
 			else
 			{
 				appPanel = new AppPanel(appInfo);
-				moduleMap[moduleName] = AppPanel;
+				moduleDic[moduleName] = appPanel;
 				appPanel.init(data,openTable);
 				appPanel.setup();
 			}
