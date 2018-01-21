@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankFight2D", "Assembly-CSharp.csproj", "{87A0C54A-AC89-FD8C-9DEC-3742BDD4F950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankFight2D", "Assembly-CSharp-firstpass.csproj", "{7DA0C906-ABBE-8A3F-17BB-C7500D18F265}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankFight2D", "Assembly-CSharp-Editor-firstpass.csproj", "{ABEDF296-9ED6-D8C5-B6F2-4A59333B637C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87A0C54A-AC89-FD8C-9DEC-3742BDD4F950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A0C54A-AC89-FD8C-9DEC-3742BDD4F950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A0C54A-AC89-FD8C-9DEC-3742BDD4F950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A0C54A-AC89-FD8C-9DEC-3742BDD4F950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DA0C906-ABBE-8A3F-17BB-C7500D18F265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DA0C906-ABBE-8A3F-17BB-C7500D18F265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DA0C906-ABBE-8A3F-17BB-C7500D18F265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DA0C906-ABBE-8A3F-17BB-C7500D18F265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABEDF296-9ED6-D8C5-B6F2-4A59333B637C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABEDF296-9ED6-D8C5-B6F2-4A59333B637C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABEDF296-9ED6-D8C5-B6F2-4A59333B637C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABEDF296-9ED6-D8C5-B6F2-4A59333B637C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
