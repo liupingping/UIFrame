@@ -2,28 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIManager : MonoBehaviour {
-	
-	public void Awake()
-	{
-		initUI();
-	}
+public class UIManager : MonoSingleton<UIManager>
+{
+    public Camera StageCamera { get; private set; }
+    public Transform UIRootTransform { get; private set; }
 
-	private void initUI()
-	{
-		//DontDestroyOnLoad();
 
-	}
 
-	private void InitRootCanvasLoading()
-	{
-	
-	}
-
-	
-	private void LoadUIForm(string formName)
-	{
-		
-
-	}
 }
+	
