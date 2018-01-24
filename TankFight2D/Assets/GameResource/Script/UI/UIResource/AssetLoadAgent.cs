@@ -1,91 +1,105 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 public class AssetLoadAgent  {
 
 
-		public virtual void Release()
-		{
+    public virtual void Release()
+    {
+    }
 
+    public virtual void AddRef()
+    {
 
-		}
+    }
+    public virtual void SubRef()
+    {
 
-		public virtual void AddRef()
-		{
+    }
 
+    public virtual void FireLoadCompletedEvent()
+    {
+        if (callback != null)
+        {
+            try
+            {
+                ProfilerSample.BeginSample("res loaded callback {0}", callback.Method.Name);
+                callback(this);
+                ProfilerSample.EndSample();
+            }
+            catch (Exception e)
+            {
+                Debug.LogErrorFormat("message:{0},asset:{1}", e.Message, Path);
+                throw;
+            }
+        }
+    }
 
-		}
-	
+    protected AssetHandler.LoadCallbackFunc callback;
 
-		public virtual void SubRef()
-		{
+    protected Object assetObject = null;
 
-		}
+    protected object userdata = null;
 
-		public virtual void FireLoadCompletedEvent()
-		{
+    public object UserData
+    {
+        get { return userdata; }
+    }
 
+    public virtual Object AssetObject
+    {
+        get { return assetObject; }
+    }
 
-		}
+    public virtual bool IsDone { get { return false; } }
 
-		protected Object assetObject = null;
+    public virtual string Path { get { return ""; } }
 
-		protected object userData = null;
+    public virtual byte[] Bytes
+    {
+        get
+        {
+            if (AssetObject == null)
+            {
+                return null;
+            }
 
-		public object UserData
-		{
-			get {return userData;}
-		}
+            TextAsset go = AssetObject as TextAsset;
+            return go.bytes;
+        }
+    }
 
-		public virtual Object AssetObject
-		{
-			get {return assetObject;}
-		}
+    public virtual string Text
+    {
+        get
+        {
+            if (AssetObject == null)
+            {
+                return null;
+            }
 
-		public virtual bool IsDone 
-		{
-			get{{return false;}}
-		}
+            TextAsset go = AssetObject as TextAsset;
+            return go.text;
+        }
+    }
 
-		public virtual string Path
-		{
-			get 
-			{
-				return "";
-			}
-		}
+    /**
+    public virtual UIAtlas Atlas
+    {
+        get
+        {
+            if (AssetObject == null)
+            {
+                return null;
+            }
 
-		public virtual byte[] Bytes
-		{
-			get 
-			{
-				if(AssetObject == null)
-				{
-					return null;
-
-				}
-
-				TextAsset go = AssetObject as TextAsset;
-				return go.bytes;
-
-
-			}
-		}
-
-		public virtual string  Text
-		{
-			get
-			{
-				if(AssetObject == null)
-				{
-					return null;
-				}
-
-				TextAsset go = AssetObject as TextAsset;
-				return go.text;
-			}
-		}
-
+            UIAtlas go = ((GameObject)AssetObject).GetComponent<UIAtlas>();
+            return go;
+        }
+    }
+    */
 		
 }

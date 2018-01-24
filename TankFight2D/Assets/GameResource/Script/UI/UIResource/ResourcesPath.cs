@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ResourcesPath {
 
-	public static string UIPrefabPath;
+    public static string UIPrefabPath = "Assets/ResourcesRAW/Prefabs";
 
 	
 }
