@@ -5,9 +5,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankFight2D.CSharp", "TankF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankFight2D.CSharp.Plugins", "TankFight2D.CSharp.Plugins.csproj", "{9C193813-5BBE-308A-2A9B-76FD342F170C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankFight2D.CSharp.Editor", "TankFight2D.CSharp.Editor.csproj", "{4CCBD87C-0C18-36E4-0A67-6B9E1982A7DD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankFight2D.CSharp.Editor.Plugins", "TankFight2D.CSharp.Editor.Plugins.csproj", "{C51BBAE8-06AE-6732-5DBF-1BDD43726B97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankFight2D.CSharp.Editor", "TankFight2D.CSharp.Editor.csproj", "{4CCBD87C-0C18-36E4-0A67-6B9E1982A7DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +23,14 @@ Global
 		{9C193813-5BBE-308A-2A9B-76FD342F170C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C193813-5BBE-308A-2A9B-76FD342F170C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C193813-5BBE-308A-2A9B-76FD342F170C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4CCBD87C-0C18-36E4-0A67-6B9E1982A7DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4CCBD87C-0C18-36E4-0A67-6B9E1982A7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4CCBD87C-0C18-36E4-0A67-6B9E1982A7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4CCBD87C-0C18-36E4-0A67-6B9E1982A7DD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C51BBAE8-06AE-6732-5DBF-1BDD43726B97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C51BBAE8-06AE-6732-5DBF-1BDD43726B97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C51BBAE8-06AE-6732-5DBF-1BDD43726B97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C51BBAE8-06AE-6732-5DBF-1BDD43726B97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CCBD87C-0C18-36E4-0A67-6B9E1982A7DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CCBD87C-0C18-36E4-0A67-6B9E1982A7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CCBD87C-0C18-36E4-0A67-6B9E1982A7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CCBD87C-0C18-36E4-0A67-6B9E1982A7DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

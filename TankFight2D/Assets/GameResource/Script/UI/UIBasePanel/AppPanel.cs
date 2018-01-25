@@ -23,7 +23,7 @@ public class AppPanel : MonoBehaviour
     protected AssetLoadAgent colliderLoadAgent;     // 碰撞框的资源
 
     protected Transform m_uiTrans;          //> 界面根节点的transform
-    protected IUIRef m_uiRoot;           //> 界面根节点绑定的脚本（GreatWall.UI.dll上的引用脚本）
+    protected AppPanel m_uiRoot;           //> 界面根节点绑定的脚本（GreatWall.UI.dll上的引用脚本）
 
 	public AppPanel(AppInfo info)
 	{
@@ -31,7 +31,12 @@ public class AppPanel : MonoBehaviour
 		appName = info.AppName;
 	}
 
-        
+    void Start ()
+    {
+        setup();
+    }
+
+    
 
 	public void setup()
 	{
@@ -42,8 +47,6 @@ public class AppPanel : MonoBehaviour
 	{
 		this.data = data;
 		this.openTable = openTable;
-
-
 	}
 
        
@@ -61,7 +64,7 @@ public class AppPanel : MonoBehaviour
             m_uiTrans.localRotation = Quaternion.identity;
             m_uiTrans.localScale = Vector3.one;
             //> 获取UIRoot上绑定的Ref组件
-            m_uiRoot = m_uiTrans.GetComponent<UIRef>().Ref;
+            m_uiRoot = m_uiTrans.GetComponent<AppPanel>();
         }
     }
 
